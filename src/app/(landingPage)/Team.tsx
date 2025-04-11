@@ -66,7 +66,7 @@ export default function Team() {
               className="object-contain w-full h-full"
             />
           </div>
-          <div className="py-6">
+          <div className="p-6">
             <h3 className="text-2xl font-semibold   mb-4">John Doe</h3>
             <div className="flex items-center mb-4">
                   <Star className="h-6 w-6 text-yellow-500" fill="#fbbf24" />
@@ -96,7 +96,7 @@ export default function Team() {
               className="object-contain w-full h-full"
             />
           </div>
-          <div className="py-6">
+          <div className="p-6">
             <h3 className="text-2xl font-semibold   mb-4">Erik Smith</h3>
             <div className="flex items-center mb-4">
                   <Star className="h-6 w-6 text-yellow-500" fill="#fbbf24" />
