@@ -2,4 +2,4 @@
 # Application where clients can hire cleaners for home and offices
 
 
-Go to [https://www.pro-clean.vercel.app](https://www.pro-clean.vercel.app)
+Go to [https://pro-clean-six.vercel.app/](https://pro-clean-six.vercel.app/)
