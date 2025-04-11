@@ -122,7 +122,6 @@ export default function ContactSection() {
                 name="source"
                 value={formData.source}
                 onChange={handleChange}
-                defaultValue={""}
                 className="w-full px-4 py-3 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-2 focus:ring-[#0a6259]"
               >
                 <option value="" disabled selected>
