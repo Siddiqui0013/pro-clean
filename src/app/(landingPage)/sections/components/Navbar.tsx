@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
-import { useUser, UserRole } from "@/context"
+import { useUser } from "@/context"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -39,6 +39,9 @@ export default function Navbar() {
 
   // Update active section based on scroll position
   useEffect(() => {
+
+    console.log("User" , user);
+    
     const handleScrollSpy = () => {
       const sections = navLinks.map(link => document.getElementById(link.href))
       
@@ -94,8 +97,11 @@ export default function Navbar() {
 
           <div className="flex-shrink-0">
             {
-              user?.role === UserRole.CLIENT ? (
-                <p>Hello, {user.name}</p>
+              user?.role ? (
+                <Link href={`/dashboard/${user.role}`} className="px-8 py-3 rounded-md bg-primary text-white font-bold
+                text-sm shadow-md">
+                 Dashboard
+             </Link>
               )
             : (
               <Link href="/login" className="px-8 py-3 rounded-md bg-primary text-white font-bold

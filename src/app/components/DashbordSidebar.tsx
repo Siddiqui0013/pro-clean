@@ -165,7 +165,7 @@ export default function DashboardSidebar() {
           {/* Logo */}
           <div className="flex items-center px-6 py-4">
             <Image
-              src="/logo.png"
+              src="/Logo.png"
               alt="Logo"
               width={140}
               height={140}

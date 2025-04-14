@@ -18,6 +18,9 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     if (!loading && !user) {
       router.push('/login');
     }
+    else{
+      router.push(`/dashboard/${user?.role}`);
+    }
   }, [user, loading, router]);
 
   if (loading) {
