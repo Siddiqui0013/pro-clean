@@ -112,6 +112,14 @@ export default function SignUp() {
                     >
                       Register
                     </button>
+                    <h1 className="text-center text-gray-600 mt-2">OR</h1>
+
+                    <button
+                      type="submit"
+                      className="px-12 py-3 rounded-md bg-black font-bold text-white w-full text-lg shadow-md"
+                    >
+                      Login with Google
+                    </button>
                   </div>
 
                     <p className="text-lg text-gray-600 mt-2"> Already have an account? <Link href="/login" className="primary font-bold">Login</Link></p>

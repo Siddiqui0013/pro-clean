@@ -4,10 +4,13 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
+import { useUser, UserRole } from "@/context"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
+
+  const { user } = useUser();
 
   const navLinks = [
     { name: "Home", href: "home" },
@@ -90,10 +93,17 @@ export default function Navbar() {
           </nav>
 
           <div className="flex-shrink-0">
-            <Link href="/login" className="px-8 py-3 rounded-md bg-primary text-white font-bold
-             text-sm shadow-md">
-              Get A Quote
-            </Link>
+            {
+              user?.role === UserRole.CLIENT ? (
+                <p>Hello, {user.name}</p>
+              )
+            : (
+              <Link href="/login" className="px-8 py-3 rounded-md bg-primary text-white font-bold
+              text-sm shadow-md">
+               Get A Quote
+           </Link> 
+            )          
+          }
           </div>
         </div>
 
