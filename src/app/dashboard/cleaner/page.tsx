@@ -1,6 +1,6 @@
-import { Bell, Mail, ChevronDown, X, Send, Smile } from "lucide-react"
+import { X, Send, Smile } from "lucide-react"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 // import { SalesChart } from "@/app/components/sales-chart"
@@ -8,31 +8,10 @@ import { Input } from "@/components/ui/input"
 export default function Dashboard() {
   return (
 
-    <div className="min-h-screen">
-      <div className="container mx-auto p-4">
+    <div className="min-h-screen p-2">
+      <div className=" mx-auto">
         {/* Header */}
-        <header className="flex justify-between items-center mb-8">
-          <div>
-            <h1 className="text-3xl font-bold text-emerald-800">Hey, Dustin!</h1>
-            <p className="text-gray-500">Welcome back, nice to see you again!</p>
-          </div>
-          <div className="flex items-center gap-4">
-            <button className="p-2 text-gray-500 hover:text-gray-700">
-              <Mail className="h-6 w-6" />
-            </button>
-            <button className="p-2 text-gray-500 hover:text-gray-700">
-              <Bell className="h-6 w-6" />
-            </button>
-            <div className="flex items-center gap-2">
-              <Avatar className="h-10 w-10 bg-gradient-to-br from-orange-400 to-red-500">
-                <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Jamet Roy" />
-                <AvatarFallback>JR</AvatarFallback>
-              </Avatar>
-              <span className="font-medium">Jamet Roy</span>
-              <ChevronDown className="h-4 w-4" />
-            </div>
-          </div>
-        </header>
+
 
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">

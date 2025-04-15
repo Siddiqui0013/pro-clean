@@ -76,11 +76,6 @@ export default function DashboardSidebar() {
       icon: <FileInput size={20} />,
     },
     {
-      href: '/dashboard/cleaner/message',
-      label: 'Message',
-      icon: <MessageSquare size={20} />,
-    },
-    {
       href: '/dashboard/cleaner/clients',
       label: 'Clients',
       icon: <Users size={20} />,
@@ -97,7 +92,6 @@ export default function DashboardSidebar() {
     },
   ];
 
-  // Client navigation items
   const clientNavItems = [
     {
       href: '/dashboard/client',
@@ -131,8 +125,7 @@ export default function DashboardSidebar() {
     },
   ];
 
-  // Choose navigation items based on user role
-  let navItems = cleanerNavItems; // Default to cleaner for now
+  let navItems = cleanerNavItems;
 
   if (user?.role === UserRole.ADMIN) {
     navItems = adminNavItems;
@@ -140,7 +133,6 @@ export default function DashboardSidebar() {
     navItems = clientNavItems;
   }
 
-  // Mobile menu state
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
