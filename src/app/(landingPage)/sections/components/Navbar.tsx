@@ -70,6 +70,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-between">
           <div className="flex-shrink-0">
+            <Link href="/">
             <Image
               src="/Logo.png"
               alt="ProCLean Logo"
@@ -77,6 +78,7 @@ export default function Navbar() {
               height={40}
               className="h-10 w-auto"
             />
+            </Link>
           </div>
 
           <nav className="flex items-center font-extrabold space-x-2">
@@ -96,20 +98,20 @@ export default function Navbar() {
           </nav>
 
           <div className="flex-shrink-0">
-            {
+            {/* {
               user?.role ? (
                 <Link href={`/dashboard/${user.role}`} className="px-8 py-3 rounded-md bg-primary text-white font-bold
                 text-sm shadow-md">
                  Dashboard
              </Link>
               )
-            : (
-              <Link href="/login" className="px-8 py-3 rounded-md bg-primary text-white font-bold
+            : ( */}
+              <Link href="/get-a-quote" className="px-8 py-3 rounded-md bg-primary text-white font-bold
               text-sm shadow-md">
                Get A Quote
            </Link> 
-            )          
-          }
+            {/* )          
+          } */}
           </div>
         </div>
 
