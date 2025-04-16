@@ -45,8 +45,8 @@ export default function ServicesSection() {
               services:
             </p>
             <Link
-              href="/book"
-              className="inline-flex items-center border border-gray-300 rounded-md px-4 py-2 text-sm font-medium"
+              href="#"
+              className="inline-flex items-center hover:bg-teal-700 hover:text-white border border-gray-300 rounded-md px-4 py-2 text-sm font-medium"
             >
               Book Now <ArrowUpRight className="ml-2 h-4 w-4" />
             </Link>
@@ -71,8 +71,8 @@ export default function ServicesSection() {
               services:
             </p>
             <Link
-              href="/book"
-              className="inline-flex items-center bg-teal-700 text-white rounded-md px-4 py-2 text-sm font-medium"
+              href="#"
+              className="inline-flex items-center hover:bg-teal-700 hover:text-white border border-gray-300 rounded-md px-4 py-2 text-sm font-medium"
             >
               Book Now <ArrowUpRight className="ml-2 h-4 w-4" />
             </Link>
@@ -97,8 +97,8 @@ export default function ServicesSection() {
               services:
             </p>
             <Link
-              href="/book"
-              className="inline-flex items-center border border-gray-300 rounded-md px-4 py-2 text-sm font-medium"
+              href="#"
+              className="inline-flex items-center hover:bg-teal-700 hover:text-white border border-gray-300 rounded-md px-4 py-2 text-sm font-medium"
             >
               Book Now <ArrowUpRight className="ml-2 h-4 w-4" />
             </Link>
