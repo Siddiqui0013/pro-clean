@@ -63,7 +63,7 @@ export default function Navbar() {
       window.removeEventListener('scroll', handleScrollSpy)
     }
   }, [navLinks])
-
+ 
   return (
     <div className="w-full bg-white">
       <div className="container mx-auto p-4">
@@ -150,7 +150,7 @@ export default function Navbar() {
                 </button>
               ))
             }
-            <Link href="/login" className="px-8 py-3 rounded-md bg-primary text-white font-bold
+            <Link href="/get-a-quote" className="px-8 py-3 rounded-md bg-primary text-white font-bold
              text-sm shadow-md">
               Get A Quote
             </Link>
