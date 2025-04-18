@@ -40,10 +40,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     if (!loading && !user) {
       router.push('/login');
     }
-    if (!loading && user) {
+    if (!loading && user && !pathname.includes(user.role)) {
       router.push(`/dashboard/${user.role}`);
     }
-  }, [user, loading, router]);
+  }, [user, loading]);
 
   if (loading) {
     return (
@@ -66,7 +66,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <div className="w-full mx-auto">
               <header className="flex justify-between items-center p-4 mb-4">
                 <div>
-                  <h1 className="text-3xl font-bold text-emerald-800">Welcome, {user.name}</h1>
+                  <h1 className="text-3xl font-bold primary">Welcome, {user.name}</h1>
                 </div>
                 <div className="flex items-center gap-4">
                   <button className="p-2 text-gray-500 hover:text-gray-700">
