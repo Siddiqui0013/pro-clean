@@ -152,12 +152,12 @@ export default function Login() {
                 </div>
               </form>
               
-              <div className="mt-8 p-4 bg-gray-100 rounded-md">
+              <div className="mt-8 p-4 hidden bg-gray-100 rounded-md">
                 <h3 className="font-bold mb-2">Test Accounts:</h3>
                 <ul className="text-sm space-y-1">
-                  <li>Admin: admin@gmail.com / admin</li>
-                  <li>Client: client@gmail.com / client</li>
-                  <li>Cleaner: cleaner@gmail.com / cleaner</li>
+                  <li>Admin: admin@gmail.com / sss</li>
+                  <li>Client: client@gmail.com / sss</li>
+                  <li>Cleaner: cleaner@gmail.com / sss</li>
                 </ul>
               </div>
                  

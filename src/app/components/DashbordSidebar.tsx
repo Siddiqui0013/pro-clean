@@ -27,35 +27,35 @@ export default function DashboardSidebar() {
       icon: <Home size={20} />,
     },
     {
-      href: '/dashboard/cleaners',
+      href: '/dashboard/admin/cleaners',
       label: 'Cleaners',
       icon: <Users size={20} />,
     },
     {
-      href: '/dashboard/clients',
+      href: '/dashboard/admin/clients',
       label: 'Clients',
       icon: <Users size={20} />,
     },
+    // {
+    //   href: '/dashboard/admin/bookings',
+    //   label: 'Bookings',
+    //   icon: <ClipboardList size={20} />,
+    // },
     {
-      href: '/dashboard/bookings',
-      label: 'Bookings',
-      icon: <ClipboardList size={20} />,
-    },
-    {
-      href: '/dashboard/revenue',
+      href: '/dashboard/admin/revenue',
       label: 'Revenue',
       icon: <BarChart3 size={20} />,
     },
-    {
-      href: '/dashboard/messages',
-      label: 'Messages',
-      icon: <MessageSquare size={20} />,
-    },
-    {
-      href: '/dashboard/profile',
-      label: 'Profile',
-      icon: <UserCircle size={20} />,
-    },
+    // {
+    //   href: '/dashboard/admin/messages',
+    //   label: 'Messages',
+    //   icon: <MessageSquare size={20} />,
+    // },
+    // {
+    //   href: '/dashboard/admin/profile',
+    //   label: 'Profile',
+    //   icon: <UserCircle size={20} />,
+    // },
   ];
 
   // Cleaner navigation items (based on the image)

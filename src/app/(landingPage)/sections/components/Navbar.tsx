@@ -98,20 +98,26 @@ export default function Navbar() {
           </nav>
 
           <div className="flex-shrink-0">
-            {/* {
+            {
               user?.role ? (
                 <Link href={`/dashboard/${user.role}`} className="px-8 py-3 rounded-md bg-primary text-white font-bold
                 text-sm shadow-md">
                  Dashboard
              </Link>
               )
-            : ( */}
-              <Link href="/get-a-quote" className="px-8 py-3 rounded-md bg-primary text-white font-bold
+            : (
+              <Link href="/login" className="px-8 py-3 rounded-md bg-primary text-white font-bold
               text-sm shadow-md">
-               Get A Quote
+               Login
            </Link> 
-            {/* )          
-          } */}
+            )          
+          //   : (
+          //     <Link href="/get-a-quote" className="px-8 py-3 rounded-md bg-primary text-white font-bold
+          //     text-sm shadow-md">
+          //      Get A Quote
+          //  </Link> 
+          //   )          
+          }
           </div>
         </div>
 

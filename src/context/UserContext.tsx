@@ -101,7 +101,7 @@ export function UserProvider({ children }: UserProviderProps) {
   // Check if user is authenticated
  
  const login = (credentials: LoginCredentials) =>{
-    if(credentials.email === "admin@gmail.com" && credentials.password === "admin"){
+    if(credentials.email === "admin@gmail.com" && credentials.password === "sss"){
         const userData: User = {
             id: "1",
             name: "Admin",
@@ -110,7 +110,7 @@ export function UserProvider({ children }: UserProviderProps) {
     }
     updateUser(userData)
 }
-    if(credentials.email === "client@gmail.com" && credentials.password === "client"){
+    if(credentials.email === "client@gmail.com" && credentials.password === "sss"){
         const userData: User = {
             id: "2",
             name: "Client",
@@ -119,7 +119,7 @@ export function UserProvider({ children }: UserProviderProps) {
     }
     updateUser(userData)
 }
-    if(credentials.email === "cleaner@gmail.com" && credentials.password === "cleaner"){
+    if(credentials.email === "cleaner@gmail.com" && credentials.password === "sss"){
         const userData: User = {
             id: "3",
             name: "Cleaner",

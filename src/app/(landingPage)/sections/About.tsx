@@ -78,13 +78,13 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link
               href="/book"
-              className="bg-[#29766e] text-white px-8 py-3 rounded-md text-center font-medium hover:bg-[#0a6259] transition-colors"
+              className="bg-transparent border-primary hover:bg-[#0a6259] px-4 md:px-8 py-2 md:py-4 rounded-md text-[#0a6259] hover:text-white"
             >
               Book Now
             </Link>
             <Link
               href="/about"
-              className="border border-gray-300 px-8 py-3 rounded-md text-center font-medium hover:bg-gray-50 transition-colors"
+              className="bg-transparent border-primary hover:bg-[#0a6259] px-4 md:px-8 py-2 md:py-4 rounded-md text-[#0a6259] hover:text-white"
             >
               Know More
             </Link>
